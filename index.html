@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esteganografia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- sweet alert -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Mensaje secreto con Esteganografía</h1>
+        <form id="steganography-form">
+            <div class="form-group">
+                <label for="image-input">Cargar Imagen:</label>
+                <input type="file" id="image-input" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="message-input">Ingresar Mensaje:</label>
+                <textarea id="message-input" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" id="hide-message-btn">Ocultar Mensaje</button>
+                <button type="button" id="extract-message-btn">Extraer Mensaje</button>
+            </div>
+        </form>
+        <canvas id="image-canvas" style="display: none;"></canvas>
+    </section>
+    <!-- <section class="modalContainer containerClose">
+        <div id="messageResult" class="modal modalClose">
+          <p id="close"><i class="fas fa-times"></i></p>
+          <label for="messageResult" id="lblMsgResult">Su mensaje es</label>
+          <textarea id="msgResult" name="textarea" readonly></textarea>
+          <button id="copy" name="copy" type="button">
+            <i class="fas fa-copy"></i> Copiar
+          </button>
+        </div>
+    </section> -->
+
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
